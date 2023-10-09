@@ -1,0 +1,23 @@
+th {
+    background-color: #e6e6e6;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+table {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+img {
+    border-width: 5px;
+    border-color: red;
+    border-style: dashed;
+    padding: 30px;
+}
