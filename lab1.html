@@ -4,6 +4,9 @@
 <head>
     <title> Personal Portfolio </title>
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
 
 <body bgcolor="#ffcce6" text="#b3005c">
@@ -33,7 +36,7 @@
     </p>
 
     <div>
-        <table align="center">
+        <table align="center" class="table table-bordered table-striped">
             <tr>
                 <td>
                 <th> Education</th>
@@ -112,6 +115,25 @@
         <li class="item3"> <a href="https://www.google.com/search?sca_esv=574344691&rlz=1C1VDKB_enUS1070US1070&q=maine+coon+cats&tbm=isch&source=lnms&sa=X&ved=2ahUKEwj-0vag6P6BAxUOF2IAHTYsBY4Q0pQJegQIDBAB&biw=514&bih=826&dpr=1.25"> Maine Coon Cats</a></li>
     </ul>
 
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+          More Cats
+        </button>
+        <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="https://www.google.com/search?sca_esv=576657926&rlz=1C1VDKB_enUS1070US1070&q=siamese+cats+images&tbm=isch&source=lnms&sa=X&sqi=2&ved=2ahUKEwiU1rLnqZKCAxUPFlkFHWLqArMQ0pQJegQICxAB&biw=754&bih=832&dpr=1.25"> Siamese Cats</a></li>
+             <li><a class="dropdown-item" href="https://www.google.com/search?sca_esv=576657926&rlz=1C1VDKB_enUS1070US1070&q=british+shorthair+images&tbm=isch&source=lnms&sa=X&ved=2ahUKEwj9vp32qZKCAxVeEVkFHb5wCF8Q0pQJegQICxAB&biw=754&bih=832&dpr=1.25">British Shorthair</a></li>
+             <li><a class="dropdown-item" href="https://www.google.com/search?sca_esv=576657926&rlz=1C1VDKB_enUS1070US1070&q=birman+cats&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiy5LOBqpKCAxU2FlkFHTvcDdcQ0pQJegQIDxAB&biw=754&bih=832&dpr=1.25">Birman</a></li>
+        </ul>
+      </div>
+
+      <div>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Even More Cat Breeds</button>
+     <div id="demo" class="collapse">
+       Ragdoll, Sphynx, Burmese, Abyssinian, Norwegian, Devon Rex, American Wirehair, American Shorthair, Ragamuffin, Cornish Rex, Charteux, Turkish Angora, Manx
+     </div>
+   
+   </div>
 </body>
 
 </html>
