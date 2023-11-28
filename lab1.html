@@ -141,6 +141,18 @@
        New Text
    </button>
 
+   <br>  <br>
+  
+   <form id="login" align="center">
+    <label for="username">Username:</label> <br>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+    <label for="password">Password:</label> <br>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
 <script>
 //     let num1 = 5
 //     let num2 = 10
@@ -166,16 +178,32 @@
 
 // calculateGrade(score);
 
-changeText = document.getElementById('changeTextBtn');
-displayText = document.getElementById('displayText');
+// changeText = document.getElementById('changeTextBtn');
+// displayText = document.getElementById('displayText');
 
-changeTextBtn.addEventListener('click', function () {
-    function changeText () {
-    displayText.innerText = "Hello, JavaScript World!";
-}
-changeText();
-});
+// changeTextBtn.addEventListener('click', function () {
+//     function changeText () {
+//     displayText.innerText = "Hello, JavaScript World!";
+// }
+// changeText();
+// });
 
+document.getElementById('login').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      
+      if (username === '' || password === '') {
+        alert('Error: Missing values in field(s)');
+      } else {
+       
+        setTimeout(function() {
+          alert('Login successful');
+        }, 3000);
+      }
+    });
 </script>
 </body>
 
